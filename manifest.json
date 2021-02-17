@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Ad to Charity",
+  "version": "0.1.0",
+  "description": "show ads and donate revenue to PoorKids",
+
+  "chrome_url_overrides": {
+    "newtab": "dashboard.html"
+  },
+
+  "browser_action": {
+    "default_icon": "BFS.png"
+  },
+
+  "permissions": ["tabs"],
+
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["<all_urls>"]
+  }]
+
+}

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <style>
+    body,
+    html {
+      height: 100%;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("https://picsum.photos/1920/1200");
+      filter: brightness(150%);
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .item {
+      margin-right: 5px;
+    }
+
+    .ads {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+    }
+
+    .date {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
+
+    #time {
+      font-size: 60px;
+      font-weight: 500;
+    }
+
+    #date1 {
+      font-size: 30px;
+      font-weight: 300;
+      left: 50%;
+      right: 50%;
+    }
+
+    .BorderColorChangeElement {
+      animation: BorderColorChange 1s ease-out 0s infinite alternate none running;
+    }
+
+    @keyframes BorderColorChange {
+      0% {
+        border: 10px solid #ffc0cb;
+      }
+
+      100% {
+        border: 10px solid #ff69b4;
+      }
+    }
+
+    @keyframes rotateAnim {
+      0% {
+        transform: rotate(deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes scaler {
+      0% {
+        transform: scale(1);
+      }
+
+      100% {
+        transform: scale(1.5);
+      }
+    }
+
+    .imgAnim619 {
+      animation: rotateAnim 10s linear 0s infinite forwards running;
+    }
+
+    .btnAnim619 {
+      animation: scaler 1s linear 0s infinite alternate none running;
+    }
+
+    .btnAnim619:hover {
+      animation-play-state: paused;
+    }
+  </style>
+
+  <title>Hello, world!</title>
+</head>
+
+<body class="bg">
+  <div class="container">
+
+    <div class="row justify-content-between" style="margin-top: 20px;">
+      <div class="col-3">
+
+        <button type="button" class="btn btn-secondary item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark"
+            viewBox="0 0 16 16">
+            <path
+              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+          </svg>
+        </button>
+        <button type="button" class="btn btn-secondary item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text"
+            viewBox="0 0 16 16">
+            <path
+              d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z">
+            </path>
+            <path
+              d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z">
+            </path>
+          </svg>
+        </button>
+
+        <button type="button" class="btn btn-secondary item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-task"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+            <path
+              d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+            <path fill-rule="evenodd"
+              d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+          </svg>
+        </button>
+
+        <button type="button" class="btn btn-secondary item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+        </button>
+
+      </div>
+
+      <div class="col-3">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill item"
+          viewBox="0 0 16 16">
+          <path
+            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </svg> -->
+        <span class="item" style="font-size: large;font-weight: 700;">$1,067,256.93</span>
+        <span class="item" style="font-size: large;font-weight: 700;">322 <svg xmlns="http://www.w3.org/2000/svg"
+            width="16" height="16" fill="currentColor" class="bi bi-heart item" viewBox="0 0 16 16">
+            <path
+              d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+          </svg></span>
+
+        <button type="button" class="btn btn-secondary item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+            <path
+              d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
+            </path>
+          </svg>
+          <span class="visually-hidden">Button</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="date">
+      <div id="time"></div>
+      <div id="date1"></div>
+    </div> 
+
+    <div class="ads">
+      <!-- <h1>Hello!</h1> -->
+      <!--ad generator------------------>
+      <div class="BorderColorChangeElement"
+        style="text-align:center;overflow:hidden;border-radius:0px;-webkit-box-shadow: 16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow: 16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow: 16px 17px 18px -7px rgba(18,1,18,0.61);background:#009688;border:10px solid #000000;padding:8px;max-width:calc(100% - 48px);width:500px">
+        <div class="imgAnim619" style="display: inline-block;position:relative;vertical-align: middle;padding:8px">
+          <img
+            src="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            style="max-width:100%;width:60px" />
+        </div>
+        <div
+          style="display:inline-block;text-shadow:#030303 4px 4px 4px;position:relative;vertical-align: middle;padding:8px;font-size:45px;color:#ffffff;font-weight:normal">
+          titke</div>
+        <div
+          style="display:inline-block;text-shadow:#030303 4px 4px 4px;position:relative;vertical-align: middle;padding:8px;font-size:14px;color:#ffffff;font-weight:normal">
+          Display Description of your ad here</div>
+        <div class="btnAnim619" style="display:inline-block;position:relative;vertical-align: middle;padding:8px">
+          <a target="_blank" href=""><input type="button" value="Visit Now"
+              style="margin:0px;background:#000000;padding:8px;border:3px solid red;color:#ffffff;border-radius:0px;cursor:pointer" /></a>
+        </div>
+      </div>
+      <!----------------->
+    </div>
+
+
+  </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  
+  <script>
+    var today = new Date();
+    var time = today.getHours() + ":" + today.getMinutes();
+    document.getElementById("time").innerHTML = time;
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    document.getElementById("date1").innerHTML = date;
+  </script>
+</body>
+
+</html>

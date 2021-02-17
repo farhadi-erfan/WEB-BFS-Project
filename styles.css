@@ -1,0 +1,28 @@
+body::before {
+  direction: rtl;
+  text-shadow: 0 0 10px white;
+  content: 'کلیک کن!';
+  background: url("https://picsum.photos/1800/100") no-repeat center;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000000 !important;
+  font-size: 72px;
+}
+
+#masthead,
+#primary {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  background-color: #fff;
+  padding: 20px !important;
+}
+#masthead {
+  background: none;
+}
+#masthead img, #primary img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
